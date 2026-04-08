@@ -1,8 +1,258 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Git Ready</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+        </style>
     </head>
-    <body>
-        <h1 style="text-align: center">Git Ready</h1>
+
+    <body class="bg-gray-100 text-gray-900">
+        <!-- Header -->
+        <header
+            class="max-w-4xl mx-auto flex justify-between items-center px-8 py-6"
+        >
+            <h1 class="text-xl font-semibold">Git Ready</h1>
+            <button class="text-sm text-gray-600 hover:text-black">
+                Log out
+            </button>
+        </header>
+
+        <!-- Course Grid -->
+        <main class="max-w-4xl mx-auto px-6 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">01</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Introduction to Version Control & Git
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">02</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Core Git Concepts - The Mental Model
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">03</h2>
+                    <h3 class="text-2xl font-bold mt-2">Branching Basics</h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">04</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Merging & Conflict Resolution
+                    </h3>
+
+                    <div class="mt-6">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">05</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Remote Repositories & Collaboration
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">06</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Rebasing & History Management
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">07</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Advanced Git Operations
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">08</h2>
+                    <h3 class="text-2xl font-bold mt-2">Git Internals</h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">09</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        CI/CD with GitHub Actions
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl p-10 shadow-sm text-center relative"
+                >
+                    <span class="absolute top-6 right-6 text-green-500">✔</span>
+                    <h2 class="text-6xl text-gray-200 font-bold">10</h2>
+                    <h3 class="text-2xl font-bold mt-2">
+                        Team Workflows & Best Practices
+                    </h3>
+
+                    <div class="mt-6 space-x-3">
+                        <button
+                            class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm"
+                        >
+                            Read Episode
+                        </button>
+                        <button class="px-4 py-2 rounded-full border text-sm">
+                            Take a Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12">
+                <button
+                    class="bg-black text-white px-6 py-3 rounded-full shadow hover:opacity-90"
+                >
+                    Download Certificate
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="flex justify-between items-center px-8 py-10 text-sm text-gray-500"
+        >
+            <div class="text-center">Copyright @ 2026</div>
+        </footer>
     </body>
 </html>
